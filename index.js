@@ -11,7 +11,9 @@ const port = process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
+app.get('/',(req,res) =>{
+	res.send("start");
+})
 app.post('/webhook', async (req, res) => {
 	let replyToken = req.body.events[0].replyToken;
 	let userId = req.body.events[0].source.userId;
