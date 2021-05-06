@@ -89,6 +89,14 @@ app.post('/webhook', async (req, res) => {
 						'หรือจะลองอ่านบทความนี้ดูก็ได้นะ https://nonthakon.medium.com/computer-network-arp-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3-aa4fdb633a6d',
 				});
 				break;
+			case 'ดู Infographic':
+				await push(userId, {
+					type: 'text',
+					text:
+						'ลองดูที่นี่สิ https://drive.google.com/file/d/1nT6q1K32LH-Tt0CgBAPa2_j7tw7i6XCf/view?usp=sharing :-D',
+				});
+				break;
+				
 			default:
 				reply(replyToken, {
 					type: 'text',
@@ -141,6 +149,14 @@ app.post('/webhook', async (req, res) => {
 									type: 'message',
 									label: 'HTTP คืออะไร?',
 									text: 'HTTP คืออะไร?',
+								},
+							},
+							{
+								type: 'action',
+								action: {
+									type: 'message',
+									label: 'ดู Infographic',
+									text: 'ดู Infographic',
 								},
 							},
 						],

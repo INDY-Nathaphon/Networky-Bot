@@ -148,6 +148,30 @@ module.exports.carousel = {
 					paddingAll: '0px',
 				},
 			},
+			{
+				type: 'bubble',
+				body: {
+					type: 'box',
+					layout: 'vertical',
+					contents: [
+						{
+							type: 'image',
+							url:
+								'https://github.com/nonkung51/Networky-Bot/blob/main/assets/VII.png?raw=true',
+							size: 'full',
+							aspectMode: 'cover',
+							aspectRatio: '1:1',
+							gravity: 'top',
+							action: {
+								type: 'message',
+								label: 'action',
+								text: 'ดู Infographic',
+							},
+						},
+					],
+					paddingAll: '0px',
+				},
+			},
 		],
 	},
 };
