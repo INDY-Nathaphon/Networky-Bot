@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const { MESSAGING_API_KEY } = require('./config')
+const  MESSAGING_API_KEY  =process.env.MESSAGING_API_KEY ||  require('./config')
 
 const LINE_MESSAGING_API = 'https://api.line.me/v2/bot/message';
 const LINE_HEADER = {
