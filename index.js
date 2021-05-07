@@ -131,7 +131,7 @@ app.post('/webhook', async (req, res) => {
 								type: 'action',
 								action: {
 									type: 'message',
-									label: 'Fragmentation คือ?',
+									label: 'Fragmentation คืออะไร',
 									text: 'Fragmentation คืออะไร?',
 								},
 							},
