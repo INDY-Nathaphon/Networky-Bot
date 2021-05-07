@@ -117,7 +117,7 @@ module.exports.carousel = {
 							action: {
 								type: 'message',
 								label: 'action',
-								text: 'HTTP คืออะไร?',
+								text: 'ARP คืออะไร?',
 							},
 						},
 					],
@@ -141,7 +141,8 @@ module.exports.carousel = {
 							action: {
 								type: 'message',
 								label: 'action',
-								text: 'ARP คืออะไร?',
+								text: 'HTTP คืออะไร?',
+								
 							},
 						},
 					],
