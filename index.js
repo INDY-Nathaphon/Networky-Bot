@@ -45,7 +45,7 @@ app.post('/webhook', async (req, res) => {
 				await push(userId, {
 					type: 'text',
 					text:
-						'ลองดูคลิปนี้ดูสิ https://youtu.be/fR49RMo_IJo :-D',
+						'ลองดูคลิปนี้ดูสิ https://youtu.be/HqN-l7gFgWo :-D',
 				});
 				await push(userId, {
 					type: 'text',
